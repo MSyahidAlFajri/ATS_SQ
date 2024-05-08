@@ -88,6 +88,8 @@ register_button = driver.find_element(By.ID, 'button')
 register_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'button')))
 register_button.click()
 
+#delay beberapa waktu
 time.sleep(15)
 
+#close  browser
 driver.quit()
