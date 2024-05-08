@@ -24,7 +24,7 @@ button_register = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By
 button_register.click()
 time.sleep(3)
 
-#mengisi label name 
+#masukan label name 
 label_name = driver.find_element(By.ID, 'name') 
 label_name.click()
 
@@ -35,7 +35,7 @@ for character in name:
 
 label_name.send_keys(Keys.ENTER)
 
-#mengisi label username
+#masukan label username
 label_username = driver.find_element(By.ID, 'email')  
 label_username.click()
 
@@ -46,7 +46,7 @@ for character in username:
 
 label_username.send_keys(Keys.ENTER)
 
-#mengisi label password
+#masukan label password
 label_password = driver.find_element(By.ID, 'password') 
 label_password = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'password')))
 
@@ -59,7 +59,7 @@ for character in password:
 
 label_password.send_keys(Keys.ENTER)
 
-#mengisi label no wa
+#masukan label no wa
 label_no_wa = driver.find_element(By.ID, 'nohp')
 label_no_wa.click()
 
@@ -70,7 +70,7 @@ for character in no_wa:
 
 label_no_wa.send_keys(Keys.ENTER)
 
-#mengisi label kkonfirmasi password
+#masukan label kkonfirmasi password
 label_confirm_password = driver.find_element(By.ID, 'confirm-password')  
 label_confirm_password = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'confirm-password')))
 
@@ -83,7 +83,7 @@ for character in password:
 
 label_confirm_password.send_keys(Keys.ENTER)
 
-#klik tombol daftar 
+#klik tombol daftar untuk menyelesaikan proses registrasi
 register_button = driver.find_element(By.ID, 'button')  
 register_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'button')))
 register_button.click()
